@@ -2,6 +2,11 @@
 
 (ENGLISH VERSION, para la version en ESPÑOL buscar al final del documento)
 
+The purpose of this guide is to set ready a system comprised by Apple silicon processors (by the time of this writing the M1 & M2 SoCs) in order to use q-emu ARM architecture emulator to compile, test & debbug ARM assembler projects.
+
+The guide will instruct how to tune and install the toolchain rquired to compile and emulate programs on OS's running ARM processors. 
+
+
 It can be used in two ways:
 - Directly on macOS
 - Bye means of virtualized VM running UBUNTU for ARM64 arch
@@ -39,7 +44,7 @@ Once ubuntu VM is ready, install then qemu and gcc-arm-none-eabi packages:
 $ sudo apt install qemu
 $ sudo apt install gcc-arm-none-eabi
 
-And prety much that's it, now you can start qemu in either case, to test if it works run:
+And pretty much that's it, now you can start qemu in either case, to test if it works run:
 
 $ quemu-system-arm --help
 
@@ -49,6 +54,10 @@ and you'll get a plethora of help text!
 -------------------------------------------------------------------------------------
 
 SPANISH VERSION:
+
+El propósito de esta guía es preparar un sistema compuesto por procesadores "Apple Silicon" (al momento de escribir esto, los SoC M1 y M2) para usar el emulador de arquitectura q-emu ARM para compilar, probar y depurar proyectos de ensamblador ARM.
+
+La guía le indicará cómo preparar e instalar la cadena de herramientas necesaria para compilar y emular programas en sistemas operativos que ejecutan procesadores ARM.
 
 se puede utilizar de dos formas:
 - Directamente sobre el macOS
@@ -93,8 +102,3 @@ y basicamente eso seria todo, para probar que se instaló correctametne, en cual
 $ qemu-system-arm --help
 
 y debera aparecer un extenso texto de ayuda con la sytanxis completa.
-
-
-
-
-
