@@ -18,7 +18,7 @@ it'll be installed more probably in:
 
 /Applications/ARM/bin/
 
-but could be in another location as well, in any case it is very important to note down this directory because it must be added to .Xshrc (bash, zsh, or whatever shell you want to use).
+but could be in another location as well, in any case it is very important to note down this directory because it must be added to PATH environment var in .Xshrc (bash, zsh, or whatever shell you want to use).
 
 In case you already have homebrew installed for x86 arch Mac (probably migrating and intel mac to an M1 mac i.e.) in your M1 mac, remove homebrew following instructions in homebrew's site.
 
