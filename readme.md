@@ -42,6 +42,7 @@ As a test case it was installed using UTM (Universal Turing Machine: https://mac
 Once ubuntu VM is ready, install then qemu and gcc-arm-none-eabi packages:
 
 $ sudo apt install qemu
+
 $ sudo apt install gcc-arm-none-eabi
 
 And pretty much that's it, now you can start qemu in either case, to test if it works run:
