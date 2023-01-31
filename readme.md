@@ -33,6 +33,11 @@ Then reinstal homebrew (also following install instructions from homebrew's site
 
 $ brew install qemu
 
+Additionally, in order to be able to use debug interface via TCP port, you may need to install telnet for macOS at your own risk (which is not installed by default for obvious security reasons):
+
+$ brew install telnet
+
+keep reading next section to test for successful install
 
 Second case, VM with UBUNTU 22.04-LTS aArch64
 ---------------------------------------------
@@ -86,6 +91,12 @@ puede que haya que volver a instalar con homebrew algunos paquetes (python, etc)
  - instalar qemu con homebrew: 
 
 $ brew install qemu
+
+Además, para poder usar la interfaz de depuración a través de un puerto TCP, es posible que deba instalar telnet para macOS bajo su propio riesgo (que no está instalado de forma predeterminada por razones obvias de seguridad):
+
+$ brew install telnet
+
+siga leyendo la siguiente sección para probar que todo se haya instalado correctamente.
 
 
 Segundo caso, VM con UBUNTU 22.04-LTS aArch64
