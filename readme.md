@@ -25,7 +25,7 @@ it'll be installed more probably in:
 
 but could be in another location as well, in any case it is very important to note down this directory because it must be added to PATH environment var in .Xshrc (bash, zsh, or whatever shell you want to use).
 
-In case you already have homebrew installed for x86 arch Mac (probably migrating and intel mac to an M1 mac i.e.) in your M1 mac, remove homebrew following instructions in homebrew's site.
+In case you already have homebrew installed for x86 arch Mac (probably migrating from an intel mac to an M1 mac i.e.) in your Apple silicon mac, remove homebrew following instructions in homebrew's site.
 
 Then reinstal homebrew (also following install instructions from homebrew's site), and probably you have to install again some other packages with homebrew (like python, etc.)
 
@@ -73,18 +73,18 @@ Primer caso, macOS nativo:
 ---------------------------
  - primero instalar gcc-arm-none-eabi
 
-descargar el paquete : gcc-arm-none-eabi-10.3-2021.10-mac.pkg (o loa version mas receinte) desde:
+descargar el paquete : gcc-arm-none-eabi-10.3-2021.10-mac.pkg (o la versión más receinte) desde:
 https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads.
 
-esto se instala por lo general en 
+esto se instala por lo general en: 
 
 /Applications/ARM/bin/
 
-pero puede llegar a ser en otra ubicacion, es importante averiguar esto, porque hay que agregar al PATH del .Xshrc (bash, zsh, o el shell que se quiera usar) este directorio
+pero puede llegar a ser en otra ubicación, es importante averiguar esto, porque hay que agregar al PATH del .Xshrc (bash, zsh, o el shell que se quiera usar) este directorio
 
 en caso de tener instalado homebrew para intel en mac con M1, remover el homebrew con las instrucciones de la pagina de homebrew
 
-luego volverlo a instalar (tambien con las instrucciones de la pagina de homebrew)
+luego volverlo a instalar (correctamentebásicamente con las instrucciones de la pagina de homebrew)
 
 puede que haya que volver a instalar con homebrew algunos paquetes (python, etc), hacerlo
 
@@ -110,8 +110,8 @@ $ sudo apt install qemu
 
 $ sudo apt install gcc-arm-none-eabi
 
-y basicamente eso seria todo, para probar que se instaló correctametne, en cualquiera de los dos casos, ejecutar:
+y básicamente eso seria todo, para probar que se instaló correctamente, en cualquiera de los dos casos, ejecutar:
 
 $ qemu-system-arm --help
 
-y debera aparecer un extenso texto de ayuda con la sytanxis completa.
+y deberá aparecer un extenso texto de ayuda con la sytanxis completa.
