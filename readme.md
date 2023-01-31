@@ -95,6 +95,7 @@ Como ejemplo se instalo el Ubuntu en UTM (Universal Turing Machine: https://mac.
 Una vez instalado el ububtu, instalar luego los paquetes de qemu y gcc-arm-none-eabi:
 
 $ sudo apt install qemu
+
 $ sudo apt install gcc-arm-none-eabi
 
 y basicamente eso seria todo, para probar que se instaló correctametne, en cualquiera de los dos casos, ejecutar:
