@@ -39,13 +39,20 @@ Once ubuntu VM is ready, install then qemu and gcc-arm-none-eabi packages:
 $ sudo apt install qemu
 $ sudo apt install gcc-arm-none-eabi
 
-se puede utilizar de dos formas:
-- Directamente sobre el macOS
-- en una VM virtualizada correindo UBUNTU para ARM64
+And prety much that's it, now you can start qemu in either case, to test if it works run:
+
+$ quemu-system-arm --help
+
+and you'll get a plethora of help text!
+
 
 -------------------------------------------------------------------------------------
 
 SPANISH VERSION:
+
+se puede utilizar de dos formas:
+- Directamente sobre el macOS
+- en una VM virtualizada correindo UBUNTU para ARM64
 
 Primer caso, macOS nativo:
 ---------------------------
@@ -80,6 +87,13 @@ Una vez instalado el ububtu, instalar luego los paquetes de qemu y gcc-arm-none-
 
 $ sudo apt install qemu
 $ sudo apt install gcc-arm-none-eabi
+
+y basicamente eso seria todo, para probar que se instaló correctametne, en cualquiera de los dos casos, ejecutar:
+
+$ qemu-system-arm --help
+
+y debera aparecer un extenso texto de ayuda con la sytanxis completa.
+
 
 
 
