@@ -35,7 +35,11 @@ $ brew install qemu
 
 Additionally, in order to be able to use debug interface via TCP port, you may need to install telnet for macOS at your own risk (which is not installed by default for obvious security reasons):
 
-$ brew install telnet
+$ arch --arm64e brew install telnet
+
+- Finally in order to be able to use "readelf" in macOS, use "dwarfdump" instead in your Makefiles, probably you'll need to "brew" it:
+
+$ arch --arm64e brew install binutils
 
 keep reading next section to test for successful install
 
@@ -95,6 +99,10 @@ $ brew install qemu
 Además, para poder usar la interfaz de depuración a través de un puerto TCP, es posible que deba instalar telnet para macOS bajo su propio riesgo (que no está instalado de forma predeterminada por razones obvias de seguridad):
 
 $ brew install telnet
+
+- Finalmente para poder utilizar "readelf" en macOS, en su lugar use "dwarfdump" dentro de los Makefiles, probablemente haya que instalarlo con "brew":
+
+$ arch --arm64e brew install binutils
 
 siga leyendo la siguiente sección para probar que todo se haya instalado correctamente.
 
