@@ -1,6 +1,6 @@
 # QEMU toolchain for MAC survival kit (Apple silicon Mx)
 
-(ENGLISH VERSION, para la version en ESPÑOL buscar al final del documento)
+(ENGLISH VERSION, para la version en ESPAÑOL buscar al final del documento)
 
 The purpose of this guide is to set ready a system comprised by Apple silicon processors (by the time of this writing the M1 & M2 SoCs) in order to use q-emu ARM architecture emulator to compile, test & debbug ARM assembler projects.
 
@@ -31,7 +31,7 @@ Then reinstal homebrew (also following install instructions from homebrew's site
 
  - install qemu with homebrew 
 
-$ brew install qemu
+$ arch --arm64e brew install qemu
 
 Additionally, in order to be able to use debug interface via TCP port, you may need to install telnet for macOS at your own risk (which is not installed by default for obvious security reasons):
 
