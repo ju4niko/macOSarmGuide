@@ -27,7 +27,7 @@ but could be in another location as well, in any case it is very important to no
 
 In case you already have homebrew installed for x86 arch Mac (probably migrating from an intel mac to an M1 mac i.e.) in your Apple silicon mac, remove homebrew following instructions in homebrew's site.
 
-Then reinstal homebrew (also following install instructions from homebrew's site), and probably you have to install again some other packages with homebrew (like python, etc.)
+Then reinstal homebrew (also following install instructions from homebrew's site), and probably you have to install again some other packages with homebrew (like python, etc.).
 
  - install qemu with homebrew 
 
