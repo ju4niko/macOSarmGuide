@@ -37,10 +37,30 @@ Additionally, in order to be able to use debug interface via TCP port, you may n
 
 $ arch --arm64e brew install telnet
 
-- Finally in order to be able to use "readelf" in macOS, use "dwarfdump" instead in your Makefiles, probably you'll need to "brew" it:
+- Now in order to be able to use "readelf" in macOS, use "dwarfdump" instead in your Makefiles, probably you'll need to "brew" it:
 
 $ arch --arm64e brew install binutils
 
+- Next step is to setup a debugging environment with gdb-like interface, on Apple silicon Macs we'll use lldb insted, so first things first, lets port-install lldb: 
+
+$ sudo port install lldb-8.0
+
+once lldb is installed we can attach to a qemu-arm-system proccess running our ARM programms similar way gdb does, so in one terminal start qemu using -s and -S switches in order to begin emulation stopped and for listen on TCP port 1234 for incomming lldb connection:
+
+$ qemu-arm-system <all your config stuff here> -s -S
+
+Then in another terminal fire up lldb:
+
+$ lldb
+(lldb) gdb-remote <ip-address>:<port>
+
+where <ip-address> in our case will be "localhost" and <port> 1234
+
+now you can use command-line-like gdb standard interface or use curses-based-built-in GUI for lldb
+
+(lldb) gui
+
+help for this GUI is self explanatory
 keep reading next section to test for successful install
 
 Second case, VM with UBUNTU 22.04-LTS aArch64
@@ -100,9 +120,30 @@ Además, para poder usar la interfaz de depuración a través de un puerto TCP, 
 
 $ brew install telnet
 
-- Finalmente para poder utilizar "readelf" en macOS, en su lugar use "dwarfdump" dentro de los Makefiles, probablemente haya que instalarlo con "brew":
+- Ahora para poder utilizar "readelf" en macOS, en su lugar use "dwarfdump" dentro de los Makefiles, probablemente haya que instalarlo con "brew":
 
 $ arch --arm64e brew install binutils
+
+- El siguiente paso es configurar un entorno de depuración con una interfaz similar a gdb, en las Mac con Apple silicon usaremos lldb, así que lo primero es lo primero, instalemos lldb usando Mac-ports:
+
+$ sudo port install lldb-8.0
+
+una vez que lldb está instalado, podemos conectarnos a un proceso qemu-arm-system ejecutando nuestros programas ARM de manera similar a gdb, por lo que en una terminal, inicie qemu usando las opciones -s y -S para comenzar la emulación detenida y para escuchar en el puerto TCP 1234 la conexión lldb entrante:
+
+$ qemu-arm-system <tus opciones de inicio> -s -S
+
+Luego, en otra terminal, inicie lldb:
+
+$ lldb
+(lldb) gdb-remote <dirección-ip>:<puerto>
+
+donde <dirección-ip> en nuestro caso será "localhost" y <puerto> 1234
+
+ahora puede usar la interfaz estándar gdb similar a la línea de comandos o usar la GUI incorporada basada en curses para lldb
+
+(lldb) gui
+
+la ayuda para esta GUI se explica por sí misma
 
 siga leyendo la siguiente sección para probar que todo se haya instalado correctamente.
 
