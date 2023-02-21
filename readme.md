@@ -41,7 +41,7 @@ $ arch --arm64e brew install telnet
 
 $ arch --arm64e brew install binutils
 
-- Next step is to setup a debugging environment with gdb-like interface, on Apple silicon Macs we'll use lldb insted, so first things first, lets port-install lldb: 
+- Next step is to setup a debugging environment with gdb-like interface, on Apple silicon Macs we'll use lldb instead, so first things first, lets port-install lldb: 
 
 $ sudo port install lldb-8.0
 
