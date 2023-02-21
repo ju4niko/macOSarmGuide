@@ -4,12 +4,12 @@
 
 The purpose of this guide is to set ready a system comprised by Apple silicon processors (by the time of this writing the M1 & M2 SoCs) in order to use q-emu ARM architecture emulator to compile, test & debbug ARM assembler projects.
 
-The guide will instruct how to tune and install the toolchain rquired to compile and emulate programs on OS's running ARM processors. 
+The guide will instruct how to tune and install the toolchain rquired to compile, emulate and debug programs on OS's running ARM processors. 
 
 
 It can be used in two ways:
 - Directly on macOS
-- Bye means of virtualized VM running UBUNTU for ARM64 arch
+- By means of virtualized VM running UBUNTU for ARM64 arch
 
 
 First case, native macOS:
@@ -87,7 +87,7 @@ SPANISH VERSION:
 
 El propósito de esta guía es preparar un sistema compuesto por procesadores "Apple Silicon" (al momento de escribir esto, los SoC M1 y M2) para usar el emulador de arquitectura q-emu ARM para compilar, probar y depurar proyectos de ensamblador ARM.
 
-La guía le indicará cómo preparar e instalar la cadena de herramientas necesaria para compilar y emular programas en sistemas operativos que ejecutan procesadores ARM.
+La guía le indicará cómo preparar e instalar la cadena de herramientas necesaria para compilar, emular y depurar programas en sistemas operativos que ejecutan procesadores ARM.
 
 se puede utilizar de dos formas:
 - Directamente sobre el macOS
